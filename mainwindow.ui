@@ -14,9 +14,60 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionConnectToElcus"/>
+   <addaction name="actionDisconnectWithElcus"/>
+  </widget>
+  <action name="actionConnectToElcus">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/Icons/Actions/connected.png</normaloff>:/Icons/Actions/connected.png</iconset>
+   </property>
+   <property name="text">
+    <string>ConnectToElcus</string>
+   </property>
+   <property name="toolTip">
+    <string>Создать новое подключение к плате</string>
+   </property>
+  </action>
+  <action name="actionDisconnectWithElcus">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/Icons/Actions/disconnected.png</normaloff>:/Icons/Actions/disconnected.png</iconset>
+   </property>
+   <property name="text">
+    <string>DisconnectWithElcus</string>
+   </property>
+   <property name="toolTip">
+    <string>Отключить плату</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Icons.qrc"/>
+ </resources>
  <connections/>
 </ui>
