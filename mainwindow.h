@@ -22,6 +22,7 @@ class MainWindow : public QMainWindow
         void connectionSuccessful(HANDLE hDevice, USHORT serialNumber);
 
         void on_actionConnectToElcus_triggered();
+        void on_actionStartLog2Sender_triggered();
 
     private:
         Ui::MainWindow *ui;

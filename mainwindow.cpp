@@ -1,6 +1,8 @@
 #include <QMessageBox>
 
+#include "Elcus/configuringnewconnectionwithelcus.h"
 #include "mainwindow.h"
+#include "senderlog2files.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -8,6 +10,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->actionStartLog2Sender->setEnabled(false);
+    ui->actionDisconnectWithElcus->setEnabled(false);
 }
 
 MainWindow::~MainWindow()
@@ -72,6 +76,15 @@ void MainWindow::connectionSuccessful(HANDLE hDevice, USHORT serialNumber)
     m_connectingToElcus->close();
     m_connectingToElcus->deleteLater();
     m_connectingToElcus = nullptr;
+    ConfiguringNewConnectionWithElcus settingsElcus(newConnect, this);
+    connect(&settingsElcus, &ConfiguringNewConnectionWithElcus::settingsApplied,
+            [=]{
+        ui->statusbar->showMessage(tr("Текущее подключение (серийный номер): %1").arg(newConnect->getSerialNumber()), -1);
+        ui->actionStartLog2Sender->setEnabled(true);
+
+    });
+    settingsElcus.exec();
+
 }
 
 void MainWindow::on_actionConnectToElcus_triggered()
@@ -79,5 +92,12 @@ void MainWindow::on_actionConnectToElcus_triggered()
     m_connectingToElcus = new ConnectNewElcus(this);
     connect(m_connectingToElcus, &ConnectNewElcus::connectNewElcusTrue, this, &MainWindow::connectionSuccessful);
     m_connectingToElcus->exec();
+}
+
+
+void MainWindow::on_actionStartLog2Sender_triggered()
+{
+    SenderLog2Files *senderLogs = new SenderLog2Files(m_elcusConnections.last());
+    senderLogs->show();
 }
 

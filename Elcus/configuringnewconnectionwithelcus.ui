@@ -9,1311 +9,1307 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>806</width>
-    <height>626</height>
+    <width>364</width>
+    <height>629</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Настройка каналов</string>
   </property>
-  <widget class="QGroupBox" name="gB_settingFreeq">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>9</x>
-     <y>9</y>
-     <width>343</width>
-     <height>608</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>Настройка частоты</string>
-   </property>
-   <property name="checkable">
-    <bool>false</bool>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_7">
-    <item row="0" column="0">
-     <layout class="QHBoxLayout" name="horizontalLayout_51">
-      <item>
-       <widget class="QGroupBox" name="gB_settingFreeq_outputs">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="title">
-         <string>Выходные каналы</string>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_5">
-         <item row="0" column="0">
-          <layout class="QVBoxLayout" name="verticalLayout_2">
-           <property name="spacing">
-            <number>10</number>
-           </property>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch1">
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="gB_settingFreeq">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Настройка частоты</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_51">
+        <item>
+         <widget class="QGroupBox" name="gB_settingFreeq_outputs">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="title">
+           <string>Выходные каналы</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="spacing">
+              <number>10</number>
+             </property>
              <item>
-              <widget class="QLabel" name="l_ch_1">
-               <property name="text">
-                <string>Канал 1:</string>
-               </property>
-              </widget>
+              <layout class="QHBoxLayout" name="hLayout_i_ch1">
+               <item>
+                <widget class="QLabel" name="l_ch_1">
+                 <property name="text">
+                  <string>Канал 1:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_1">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
              </item>
              <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_1">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
+              <layout class="QHBoxLayout" name="hLayout_i_ch2">
                <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
+                <widget class="QLabel" name="l_ch_2">
+                 <property name="text">
+                  <string>Канал 2:</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_2">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
                </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch2">
-             <item>
-              <widget class="QLabel" name="l_ch_2">
-               <property name="text">
-                <string>Канал 2:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_2">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch3">
-             <item>
-              <widget class="QLabel" name="l_ch_3">
-               <property name="text">
-                <string>Канал 3:</string>
-               </property>
-              </widget>
+              </layout>
              </item>
              <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_3">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
+              <layout class="QHBoxLayout" name="hLayout_i_ch3">
                <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
+                <widget class="QLabel" name="l_ch_3">
+                 <property name="text">
+                  <string>Канал 3:</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_3">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
                </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch4">
-             <item>
-              <widget class="QLabel" name="l_ch_4">
-               <property name="text">
-                <string>Канал 4:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_4">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch5">
-             <item>
-              <widget class="QLabel" name="l_ch_5">
-               <property name="text">
-                <string>Канал 5:</string>
-               </property>
-              </widget>
+              </layout>
              </item>
              <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_5">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
+              <layout class="QHBoxLayout" name="hLayout_i_ch4">
                <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
+                <widget class="QLabel" name="l_ch_4">
+                 <property name="text">
+                  <string>Канал 4:</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_4">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
                </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch6">
-             <item>
-              <widget class="QLabel" name="l_ch_6">
-               <property name="text">
-                <string>Канал 6:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_6">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch7">
-             <item>
-              <widget class="QLabel" name="l_ch_7">
-               <property name="text">
-                <string>Канал 7:</string>
-               </property>
-              </widget>
+              </layout>
              </item>
              <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_7">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
+              <layout class="QHBoxLayout" name="hLayout_i_ch5">
                <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
+                <widget class="QLabel" name="l_ch_5">
+                 <property name="text">
+                  <string>Канал 5:</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_5">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
                </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch8">
-             <item>
-              <widget class="QLabel" name="l_ch_8">
-               <property name="text">
-                <string>Канал 8:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_8">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch9">
-             <item>
-              <widget class="QLabel" name="l_ch_9">
-               <property name="text">
-                <string>Канал 9:</string>
-               </property>
-              </widget>
+              </layout>
              </item>
              <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_9">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
+              <layout class="QHBoxLayout" name="hLayout_i_ch6">
                <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
+                <widget class="QLabel" name="l_ch_6">
+                 <property name="text">
+                  <string>Канал 6:</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_6">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
                </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch10">
-             <item>
-              <widget class="QLabel" name="l_ch_10">
-               <property name="text">
-                <string>Канал 10:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_10">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch11">
-             <item>
-              <widget class="QLabel" name="l_ch_11">
-               <property name="text">
-                <string>Канал 11:</string>
-               </property>
-              </widget>
+              </layout>
              </item>
              <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_11">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
+              <layout class="QHBoxLayout" name="hLayout_i_ch7">
                <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
+                <widget class="QLabel" name="l_ch_7">
+                 <property name="text">
+                  <string>Канал 7:</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_7">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
                </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch12">
-             <item>
-              <widget class="QLabel" name="l_ch_12">
-               <property name="text">
-                <string>Канал 12:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_12">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch13">
-             <item>
-              <widget class="QLabel" name="l_ch_13">
-               <property name="text">
-                <string>Канал 13:</string>
-               </property>
-              </widget>
+              </layout>
              </item>
              <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_13">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
+              <layout class="QHBoxLayout" name="hLayout_i_ch8">
                <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
+                <widget class="QLabel" name="l_ch_8">
+                 <property name="text">
+                  <string>Канал 8:</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_8">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
                </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch14">
-             <item>
-              <widget class="QLabel" name="l_ch_14">
-               <property name="text">
-                <string>Канал 14:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_14">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch15">
-             <item>
-              <widget class="QLabel" name="l_ch_15">
-               <property name="text">
-                <string>Канал 15:</string>
-               </property>
-              </widget>
+              </layout>
              </item>
              <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_15">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
+              <layout class="QHBoxLayout" name="hLayout_i_ch9">
                <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
+                <widget class="QLabel" name="l_ch_9">
+                 <property name="text">
+                  <string>Канал 9:</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_9">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
                </item>
-               <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
+              </layout>
              </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_i_ch16">
              <item>
-              <widget class="QLabel" name="l_ch_16">
-               <property name="text">
-                <string>Канал 16:</string>
-               </property>
-              </widget>
+              <layout class="QHBoxLayout" name="hLayout_i_ch10">
+               <item>
+                <widget class="QLabel" name="l_ch_10">
+                 <property name="text">
+                  <string>Канал 10:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_10">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
              </item>
              <item>
-              <widget class="QComboBox" name="cmbB_freeq_o_ch_16">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
+              <layout class="QHBoxLayout" name="hLayout_i_ch11">
                <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
+                <widget class="QLabel" name="l_ch_11">
+                 <property name="text">
+                  <string>Канал 11:</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <property name="text">
-                 <string>12.5 кГц</string>
-                </property>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_11">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_i_ch12">
+               <item>
+                <widget class="QLabel" name="l_ch_12">
+                 <property name="text">
+                  <string>Канал 12:</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <property name="text">
-                 <string>50 кГц</string>
-                </property>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_12">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_i_ch13">
+               <item>
+                <widget class="QLabel" name="l_ch_13">
+                 <property name="text">
+                  <string>Канал 13:</string>
+                 </property>
+                </widget>
                </item>
                <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_13">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
                </item>
-              </widget>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_i_ch14">
+               <item>
+                <widget class="QLabel" name="l_ch_14">
+                 <property name="text">
+                  <string>Канал 14:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_14">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_i_ch15">
+               <item>
+                <widget class="QLabel" name="l_ch_15">
+                 <property name="text">
+                  <string>Канал 15:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_15">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_i_ch16">
+               <item>
+                <widget class="QLabel" name="l_ch_16">
+                 <property name="text">
+                  <string>Канал 16:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_o_ch_16">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12.5 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>50 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
           </layout>
-         </item>
-        </layout>
-       </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="gB_settingFreeq_inputs">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="title">
+           <string>Входные каналы</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch1">
+               <item>
+                <widget class="QLabel" name="l_ch_17">
+                 <property name="text">
+                  <string>Канал 1:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_1">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch2">
+               <item>
+                <widget class="QLabel" name="l_ch_18">
+                 <property name="text">
+                  <string>Канал 2:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_2">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch3">
+               <item>
+                <widget class="QLabel" name="l_ch_19">
+                 <property name="text">
+                  <string>Канал 3:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_3">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch4">
+               <item>
+                <widget class="QLabel" name="l_ch_20">
+                 <property name="text">
+                  <string>Канал 4:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_4">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch5">
+               <item>
+                <widget class="QLabel" name="l_ch_21">
+                 <property name="text">
+                  <string>Канал 5:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_5">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch6">
+               <item>
+                <widget class="QLabel" name="l_ch_22">
+                 <property name="text">
+                  <string>Канал 6:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_6">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch7">
+               <item>
+                <widget class="QLabel" name="l_ch_23">
+                 <property name="text">
+                  <string>Канал 7:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_7">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch8">
+               <item>
+                <widget class="QLabel" name="l_ch_24">
+                 <property name="text">
+                  <string>Канал 8:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_8">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch9">
+               <item>
+                <widget class="QLabel" name="l_ch_25">
+                 <property name="text">
+                  <string>Канал 9:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_9">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch10">
+               <item>
+                <widget class="QLabel" name="l_ch_26">
+                 <property name="text">
+                  <string>Канал 10:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_10">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch11">
+               <item>
+                <widget class="QLabel" name="l_ch_27">
+                 <property name="text">
+                  <string>Канал 11:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_11">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch12">
+               <item>
+                <widget class="QLabel" name="l_ch_28">
+                 <property name="text">
+                  <string>Канал 12:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_12">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch13">
+               <item>
+                <widget class="QLabel" name="l_ch_29">
+                 <property name="text">
+                  <string>Канал 13:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_13">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch14">
+               <item>
+                <widget class="QLabel" name="l_ch_30">
+                 <property name="text">
+                  <string>Канал 14:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_14">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch15">
+               <item>
+                <widget class="QLabel" name="l_ch_31">
+                 <property name="text">
+                  <string>Канал 15:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_15">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hLayout_o_ch16">
+               <item>
+                <widget class="QLabel" name="l_ch_32">
+                 <property name="text">
+                  <string>Канал 16:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbB_freeq_i_ch_16">
+                 <property name="currentIndex">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Выкл.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>11-14.5 КГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>36-60 кГц</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>100 кГц</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
       </item>
-      <item>
-       <widget class="QGroupBox" name="gB_settingFreeq_inputs">
-        <property name="enabled">
-         <bool>true</bool>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pB_applySettings">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
         </property>
-        <property name="title">
-         <string>Входные каналы</string>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
         </property>
-        <layout class="QGridLayout" name="gridLayout_6">
-         <item row="0" column="0">
-          <layout class="QVBoxLayout" name="verticalLayout_3">
-           <property name="spacing">
-            <number>10</number>
-           </property>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch1">
-             <item>
-              <widget class="QLabel" name="l_ch_17">
-               <property name="text">
-                <string>Канал 1:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_1">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch2">
-             <item>
-              <widget class="QLabel" name="l_ch_18">
-               <property name="text">
-                <string>Канал 2:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_2">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch3">
-             <item>
-              <widget class="QLabel" name="l_ch_19">
-               <property name="text">
-                <string>Канал 3:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_3">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch4">
-             <item>
-              <widget class="QLabel" name="l_ch_20">
-               <property name="text">
-                <string>Канал 4:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_4">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch5">
-             <item>
-              <widget class="QLabel" name="l_ch_21">
-               <property name="text">
-                <string>Канал 5:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_5">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch6">
-             <item>
-              <widget class="QLabel" name="l_ch_22">
-               <property name="text">
-                <string>Канал 6:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_6">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch7">
-             <item>
-              <widget class="QLabel" name="l_ch_23">
-               <property name="text">
-                <string>Канал 7:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_7">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch8">
-             <item>
-              <widget class="QLabel" name="l_ch_24">
-               <property name="text">
-                <string>Канал 8:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_8">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch9">
-             <item>
-              <widget class="QLabel" name="l_ch_25">
-               <property name="text">
-                <string>Канал 9:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_9">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch10">
-             <item>
-              <widget class="QLabel" name="l_ch_26">
-               <property name="text">
-                <string>Канал 10:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_10">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch11">
-             <item>
-              <widget class="QLabel" name="l_ch_27">
-               <property name="text">
-                <string>Канал 11:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_11">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch12">
-             <item>
-              <widget class="QLabel" name="l_ch_28">
-               <property name="text">
-                <string>Канал 12:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_12">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch13">
-             <item>
-              <widget class="QLabel" name="l_ch_29">
-               <property name="text">
-                <string>Канал 13:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_13">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch14">
-             <item>
-              <widget class="QLabel" name="l_ch_30">
-               <property name="text">
-                <string>Канал 14:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_14">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch15">
-             <item>
-              <widget class="QLabel" name="l_ch_31">
-               <property name="text">
-                <string>Канал 15:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_15">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="hLayout_o_ch16">
-             <item>
-              <widget class="QLabel" name="l_ch_32">
-               <property name="text">
-                <string>Канал 16:</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="cmbB_freeq_i_ch_16">
-               <property name="currentIndex">
-                <number>3</number>
-               </property>
-               <item>
-                <property name="text">
-                 <string>Выкл.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>11-14.5 КГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>36-60 кГц</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100 кГц</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </item>
-          </layout>
-         </item>
-        </layout>
+        <property name="text">
+         <string>Применить настройки частоты</string>
+        </property>
        </widget>
       </item>
      </layout>
-    </item>
-    <item row="2" column="0">
-     <widget class="QPushButton" name="pB_applySettings">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="text">
-       <string>Применить настройки частоты</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

@@ -4,5 +4,6 @@
         <file>Icons/Actions/disconnected.png</file>
         <file>Icons/Actions/inputData.png</file>
         <file>Icons/Actions/outputData.png</file>
+        <file>Icons/Actions/upload.png</file>
     </qresource>
 </RCC>

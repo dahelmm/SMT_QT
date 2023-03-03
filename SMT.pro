@@ -3,6 +3,7 @@ QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
+DEFINES += DEBUGGING_OUTPUT
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -14,8 +15,10 @@ SOURCES += \
     Elcus/connectnewelcus.cpp \
     Elcus/disconnectfromelcus.cpp \
     Elcus/elcushelper.cpp \
+    looptimer.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    senderlog2files.cpp
 
 HEADERS += \
     Elcus/MainElcusDocs/ArincPCI_4.h \
@@ -25,13 +28,16 @@ HEADERS += \
     Elcus/connectnewelcus.h \
     Elcus/disconnectfromelcus.h \
     Elcus/elcushelper.h \
-    mainwindow.h
+    looptimer.h \
+    mainwindow.h \
+    senderlog2files.h
 
 FORMS += \
     Elcus/configuringnewconnectionwithelcus.ui \
     Elcus/connectnewelcus.ui \
     Elcus/disconnectfromelcus.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    senderlog2files.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

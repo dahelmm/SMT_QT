@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1149</width>
+    <height>870</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Главное окно</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
@@ -19,7 +19,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1149</width>
      <height>22</height>
     </rect>
    </property>
@@ -40,6 +40,8 @@
    </attribute>
    <addaction name="actionConnectToElcus"/>
    <addaction name="actionDisconnectWithElcus"/>
+   <addaction name="separator"/>
+   <addaction name="actionStartLog2Sender"/>
   </widget>
   <action name="actionConnectToElcus">
    <property name="icon">
@@ -63,6 +65,18 @@
    </property>
    <property name="toolTip">
     <string>Отключить плату</string>
+   </property>
+  </action>
+  <action name="actionStartLog2Sender">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/Icons/Actions/upload.png</normaloff>:/Icons/Actions/upload.png</iconset>
+   </property>
+   <property name="text">
+    <string>StartLog2Sender</string>
+   </property>
+   <property name="toolTip">
+    <string>Запустить передачу логов</string>
    </property>
   </action>
  </widget>
