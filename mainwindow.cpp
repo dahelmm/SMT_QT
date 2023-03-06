@@ -3,6 +3,7 @@
 #include "Elcus/configuringnewconnectionwithelcus.h"
 #include "mainwindow.h"
 #include "senderlog2files.h"
+#include "stylehelper.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -12,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->actionStartLog2Sender->setEnabled(false);
     ui->actionDisconnectWithElcus->setEnabled(false);
+
+    ui->pageUdpConnect->setStyleSheet(StyleHelper::getCheckboxesStyle());
 }
 
 MainWindow::~MainWindow()
@@ -99,5 +102,25 @@ void MainWindow::on_actionStartLog2Sender_triggered()
 {
     SenderLog2Files *senderLogs = new SenderLog2Files(m_elcusConnections.last());
     senderLogs->show();
+}
+
+void MainWindow::on_bttnAddConnection_clicked()
+{
+    ui->cmbBoxConnections->addItem(tr("Соединение %1").arg(ui->cmbBoxConnections->count()+1));
+    ui->cmbBoxConnections->setCurrentIndex(ui->cmbBoxConnections->count()-1);
+
+    //Добавление соединения в контейнер соединений
+}
+
+
+void MainWindow::on_cmbBoxConnections_currentIndexChanged(int index)
+{
+    //изменение информации о соединении при смене текущего соединения
+}
+
+
+void MainWindow::on_bttnStartConnections_clicked()
+{
+    //запуск всех соединений
 }
 

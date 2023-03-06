@@ -5,5 +5,28 @@
         <file>Icons/Actions/inputData.png</file>
         <file>Icons/Actions/outputData.png</file>
         <file>Icons/Actions/upload.png</file>
+        <file>Icons/NumbersChannels/1-circle.png</file>
+        <file>Icons/NumbersChannels/2-c.png</file>
+        <file>Icons/NumbersChannels/3-c.png</file>
+        <file>Icons/NumbersChannels/4-c.png</file>
+        <file>Icons/NumbersChannels/5-c.png</file>
+        <file>Icons/NumbersChannels/6-c.png</file>
+        <file>Icons/NumbersChannels/7-c.png</file>
+        <file>Icons/NumbersChannels/8-c.png</file>
+        <file>Icons/NumbersChannels/9-c.png</file>
+        <file>Icons/NumbersChannels/10-c.png</file>
+        <file>Icons/NumbersChannels/11-c.png</file>
+        <file>Icons/NumbersChannels/12-c.png</file>
+        <file>Icons/NumbersChannels/13-c.png</file>
+        <file>Icons/NumbersChannels/14-c.png</file>
+        <file>Icons/NumbersChannels/15-c.png</file>
+        <file>Icons/NumbersChannels/16-c.png</file>
+        <file>Icons/CheckBoxes/checked.png</file>
+        <file>Icons/CheckBoxes/unchecked.png</file>
+        <file>Icons/CheckBoxes/unchecked_disabled.png</file>
+        <file>Icons/Actions/edit.png</file>
+        <file>Icons/Actions/connection.png</file>
+        <file>Icons/Actions/save.png</file>
+        <file>Icons/Actions/UdpConnecting.png</file>
     </qresource>
 </RCC>

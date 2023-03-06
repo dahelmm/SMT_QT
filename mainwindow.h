@@ -23,6 +23,11 @@ class MainWindow : public QMainWindow
 
         void on_actionConnectToElcus_triggered();
         void on_actionStartLog2Sender_triggered();
+        void on_bttnAddConnection_clicked();
+
+        void on_cmbBoxConnections_currentIndexChanged(int index);
+
+        void on_bttnStartConnections_clicked();
 
     private:
         Ui::MainWindow *ui;
